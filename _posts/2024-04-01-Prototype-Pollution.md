@@ -1,5 +1,5 @@
 ---
-title: "Prototype pollutin"
+title: "Prototype pollution"
 author: filip
 date: 2024-04-02 19:10:00 +0800
 categories: [Hack The Box, Machines, Web Security]
