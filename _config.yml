@@ -111,7 +111,7 @@ assets:
     enabled: # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    env:  production
 
 pwa:
   enabled: true # the option for PWA feature (installable)
@@ -193,6 +193,7 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
+  - .DS_Store
 
 jekyll-archives:
   enabled: [categories, tags]

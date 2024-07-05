@@ -2,7 +2,7 @@
 title: "Prototype pollution"
 author: filip
 date: 2024-04-02 19:10:00 +0800
-categories: [Hack The Box, Machines, Web Security]
+categories: [Web Security, Hack The Box]
 tags: [Notes, Prototype Pollution, Web Security, nodeJS]
 render_with_liquid: false
 ---
