@@ -1,9 +1,9 @@
 # frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 6.5", ">= 6.5.5"
+gem "jekyll-theme-chirpy", "~> 7.0.0", ">= 7.0.0"
 #gem 'jekyll-seo-tag'
+#gem 'jekyll-include-cache'
 
 group :test do
   gem "html-proofer", "~> 4.4"

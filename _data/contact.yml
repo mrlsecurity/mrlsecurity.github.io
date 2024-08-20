@@ -2,6 +2,7 @@
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/fleliukh/'                  # Fill with your Linkedin homepage
+
 - type: hackthebox  
   icon: "fa-regular fa-cube"
   noblank: true
