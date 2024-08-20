@@ -34,3 +34,7 @@ The very same method can be used to craft the complete SSTI payload bypassing ab
 Then call it the very same way:
 
 `https://localhost:3000/vulnerable/page?base=method&val=string-value`
+
+## Remedy
+
+If the use of logicless template engines is not possible and code execution is inevitable, consider blocking the aforementioned patterns, removing potentially dangerous modules, and ensuring that your template environment is deployed in a locked-down container.
