@@ -33,4 +33,4 @@ A co-admin of Kyiv DC chapter [8044](https://t.me/DC8044_Info) - the biggest Cyb
 ![eMAPT](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79653972){: .shadow .left}
 ![eCPPTv2](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79661371){: .shadow .left}
 ![eJPT](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79638562){: .shadow .left}
-
+![BSCP](assets/img/bscp.png){: .shadow .left w="200" h="200"}
