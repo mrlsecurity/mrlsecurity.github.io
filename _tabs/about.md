@@ -28,7 +28,7 @@ If you want to contact me, drop me email [contact@mrlsecurity.com](mailto:contac
 
 *Older info:*
 - Participation in UA-CTF [2018](https://www.facebook.com/events/185960249001470/)
-- "IT Security Summer SCHOOL 2019" organization volontueer and a student member of National Technical University of Ukrane Kyiv Polytechinc Institute [2019](ipt.kpi.ua/2019/07/mizhnarodna-osvitno-praktychna-litnya-shkola-it-security-summer-school-2019-v-fti)
+- "IT Security Summer SCHOOL 2019" organization volontueer and a student member of National Technical University of Ukrane Kyiv Polytechinc Institute [2019](https://ipt.kpi.ua/2019/07/mizhnarodna-osvitno-praktychna-litnya-shkola-it-security-summer-school-2019-v-fti)
 - Public speaker for DC8044 Meetup [2019](https://www.facebook.com/DC8044/photos/a.171931103517795/297552847622286/?type=3&theater)
 
 
