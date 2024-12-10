@@ -2,7 +2,7 @@
 title: "Exploiting Zabbix SQL injection(CVE-2024-42327 / ZBX-25623) in HTB Unrested"
 author: filip
 date: 2024-12-10 10:00:00 0000
-categories: [Web Security, Certifications]
+categories: [Web Security, Hack The Box]
 tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege escalation, CVE-2024-36467,]
 render_with_liquid: false
 ---
