@@ -243,7 +243,7 @@ Let’s retrieve superuser’s session(at first column names so we know what we 
 
 Great, now we have a valid session of userid=1 that belongs to Zabbix Administrator user(app’s superuser)
 
-Check documentation if we have possibility to create [system.run](http://system.run) items, zabbix functions that according to documentation lets us run system commands on demand if `EnableRemoteCommands=1` is set:
+Check documentation if we have possibility to create system.run items, zabbix functions that according to documentation lets us run system commands on demand if `EnableRemoteCommands=1` is set:
 
 [https://www.zabbix.com/documentation/current/en/manual/config/items/itemtypes/zabbix_agent#system.run](https://www.zabbix.com/documentation/current/en/manual/config/items/itemtypes/zabbix_agent#system.run)
 
