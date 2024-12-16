@@ -1,16 +1,17 @@
 ---
 title: "Exploiting Zabbix SQL injection(CVE-2024-42327 / ZBX-25623) in HTB Unrested"
+Description: Exploitation of CVE-2024-36467,CVE-2024-42327 in terms of HTB Unrested machine. A simple option for SQL injection.
 author: filip
 date: 2024-12-10 10:00:00 0000
 image:
-  path: https://labs.hackthebox.com/storage/avatars/81d76cfa411a6a28b524a9283e5e0755.png
+  path: assets/img/Unrested/unrested-logo.png
 categories: [Web Security, Hack The Box]
 tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege escalation, CVE-2024-36467,CVE-2024-42327]
 render_with_liquid: false
 ---
 [Completion](https://www.hackthebox.com/achievement/machine/124699/639)
 
-# Start
+## Start
 The machine spawns with generated credentials, for me there were:
 **matthew / `changedpasswd`**
 
@@ -20,7 +21,7 @@ Begin with nmap and see that the machine has default web and zabbix agent’s po
 
 When reaching web it declares to have Zabbix 7.0.0 running on it. This version was found to have 2 recently discovered CVEs: app’s privilege escalation and SQL injection, both affecting API endpoints.
 
-![image.png](assets/img/Unrested/image%201.png){: .shadow }
+![image.png](assets/img/Unrested/image%201.png){: .shadow  }
 
 ## CVE-2024-36467
 
