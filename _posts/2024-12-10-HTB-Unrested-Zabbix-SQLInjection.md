@@ -1,19 +1,22 @@
 ---
 title: "Exploiting Zabbix SQL injection(CVE-2024-42327 / ZBX-25623) in HTB Unrested"
-Description: Exploitation of CVE-2024-36467,CVE-2024-42327 in terms of HTB Unrested machine. A simple option for SQL injection.
+description: The exploitation of CVE-2024-36467, CVE-2024-42327 in terms of HTB Unrested machine. A simple option for SQL injection and PoC. Zabbix 7.0.0
 author: filip
 date: 2024-12-10 10:00:00 0000
-image:
-  path: assets/img/Unrested/unrested-logo-min.webp
 categories: [Web Security, Hack The Box]
 tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege escalation, CVE-2024-36467,CVE-2024-42327]
 render_with_liquid: false
 ---
-[Completion](https://www.hackthebox.com/achievement/machine/124699/639)
+
+![Logo](assets/img/Unrested/unrested-logo-min.webp)
 
 ## Start
 The machine spawns with generated credentials, for me there were:
 **matthew / `changedpasswd`**
+
+
+
+
 
 Begin with nmap and see that the machine has default web and zabbix agent’s ports opened:
 
@@ -328,6 +331,7 @@ OK, to get root  shell and flag. I used `b3MuZXhlY3V0ZSgnZWNobyBZbUZ6YUNBdGFTQSt
 
 ![image.png](assets/img/Unrested/image%2012.png){: .shadow }
 
+[Completion](https://www.hackthebox.com/achievement/machine/124699/639)
 
 ## References:
 Machine Author: [TheCyberGeek](https://app.hackthebox.com/users/114053)
