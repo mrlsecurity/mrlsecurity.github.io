@@ -4,7 +4,7 @@ Description: Exploitation of CVE-2024-36467,CVE-2024-42327 in terms of HTB Unres
 author: filip
 date: 2024-12-10 10:00:00 0000
 image:
-  path: assets/img/Unrested/unrested-logo.png
+  path: assets/img/Unrested/unrested-logo-min.png
 categories: [Web Security, Hack The Box]
 tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege escalation, CVE-2024-36467,CVE-2024-42327]
 render_with_liquid: false
