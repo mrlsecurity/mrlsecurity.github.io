@@ -2,13 +2,13 @@
 title: "Exploiting Zabbix SQL injection(CVE-2024-42327 / ZBX-25623) in HTB Unrested"
 description: The exploitation of CVE-2024-36467, CVE-2024-42327 in terms of HTB Unrested machine. A simple option for SQL injection and PoC. Zabbix 7.0.0
 author: filip
-date: 2024-12-10 10:00:00 0000
+date: 2024-12-10 10:00:00 +0000
 categories: [Web Security, Hack The Box]
-tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege escalation, CVE-2024-36467,CVE-2024-42327]
+tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege escalation, CVE-2024-36467, CVE-2024-42327]
 render_with_liquid: false
 ---
 
-![Logo](assets/img/Unrested/unrested-logo-min.webp)
+![Logo](/assets/img/Unrested/unrested-logo-min.webp)
 
 ## Start
 The machine spawns with generated credentials, for me there were:
