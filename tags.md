@@ -1,5 +1,5 @@
 ---
-layout: tags
+layout: page
 titles:
   # @start locale config
   en      : &EN       Tags
@@ -25,3 +25,13 @@ titles:
   # @end locale config
 key: page-tags
 ---
+
+## Tags
+
+{% for tag in site.tags %}
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  <h3 id="{{ tag_name | slugify }}">{{ tag_name }}</h3>
+  {% for post in tag.last %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+{% endfor %}

@@ -1,4 +1,6 @@
 ---
+
+layout: article
 title: Testing spark's integration
 date: 2024-08-24 12:00:00 +0200
 categories: [Technology, AI]

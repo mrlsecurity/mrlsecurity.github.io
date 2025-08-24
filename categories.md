@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: page
 titles:
   # @start locale config
   en      : &EN       Categories
@@ -25,3 +25,13 @@ titles:
   # @end locale config
 key: page-categories
 ---
+
+## Categories
+
+{% for category in site.categories %}
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  <h3 id="{{ category_name | slugify }}">{{ category_name }}</h3>
+  {% for post in category.last %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+{% endfor %}
