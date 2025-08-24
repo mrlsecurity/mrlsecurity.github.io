@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.0.0", ">= 7.0.0"
+gem "jekyll-text-theme"
 #gem 'jekyll-seo-tag'
 #gem 'jekyll-include-cache'
 

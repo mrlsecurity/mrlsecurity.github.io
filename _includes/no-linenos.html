@@ -1,0 +1,11 @@
+{%- comment -%}
+  Remove line numbers from code blocks for feed content
+{%- endcomment -%}
+
+{%- assign content = include.content -%}
+{%- assign content = content | replace: '<table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">', '' -%}
+{%- assign content = content | replace: '</pre></td><td class="rouge-code"><pre>', '' -%}
+{%- assign content = content | replace: '</pre></td></tr></tbody></table>', '</pre>' -%}
+{%- assign content = content | replace: '<div class="highlight"><pre class="highlight">', '<pre>' -%}
+{%- assign content = content | replace: '</pre></div>', '</pre>' -%}
+{{ content }}
